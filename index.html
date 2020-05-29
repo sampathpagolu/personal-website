@@ -31,7 +31,7 @@ body {
   background-color: #942f37;
   color: white;
 }
-#myname{
+/* #myname{
   text-align: center;
   float: right;
   color:  #ffffff ;
@@ -52,47 +52,99 @@ body {
 .para{
   text-align: right;
   margin-right: 80px;
-}.mySlides {display:none;}
+}.mySlides {display:none;} */
 </style>
 
 <body>
   <div class="topnav">
-    <a class="active" href="./index.html"> Home</a>
-    <a href="./about_me.html">About Me</a>
-    <a href="./projects/projects.html">Projects</a>
-    <a href="./contact.html">Contact</a>
+    <a class="active" onclick="Home('home')" id="home"> Home</a>
+    <a onclick="about_me('about')" id="about"> About Me</a>
+    <a onclick="projects('projects')" id="projects">Projects</a>
+    <a onclick="contact('contact')" id="contact">Contact</a>
   </div>
-  <br>
-  <div id="title">
-    <div class="slideshow" style="max-width:500px">
-    <img class="mySlides" src="./images/me.jpg" style="width:85%">
-    <img class="mySlides" src="./images/me1.jpg" style="width:100%">
-    <img class="mySlides" src="./images/me2.jpeg" style="width:100%">
-    <img class="mySlides" src="./images/me3.jpg" style="width:100%">
-    <img class="mySlides" src="./images/me4.jpg" style="width:100%">
-  </div>
-      <div id="myname">
-        <h1> Welcome to My Website</h1>
-      </div>
-  </div>
-  <p class="para">Learn about me in <b>About Me</b>. Find my expertise in <b>Projects</b>. If you wish to contact or find me on social media hit that <b> Contact</b>.<p>
-  <hr>
-  <p class="para"> This webpage is created and maintained by yours truly, Lakshmi Sampath Pagolu.</p>
-  <script>
-  var myIndex = 0;
-  carousel();
+  <div id="main"></div>
+  <div id=content></div>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> -->
 
-  function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 10000); // Change image every 2 seconds
+      <!-- $(document).ready(function(){
+      $('#main').load('/home.html #main')}); -->
+<!-- </script> -->
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script>
+// onloadstart= document.getElementById("main").innerHTML = loadPage('/home.html');
+// function loadPage(href)
+//             {
+//                 var href = href
+//                 var xmlhttp = new XMLHttpRequest();
+//                 xmlhttp.open("GET", href);
+//                 xmlhttp.send();
+//                 return xmlhttp.responseText;
+//             }
+//    async function fetchHtmlAsText(url) {
+//      const response = await fetch(url);
+//       return await response.text();
+  // async function home(){
+  // const contentDiv = document.getElementById("main");
+  // contentDiv.innerHTML = await fetchHtmlAsText("home.html");
+// }
+$( "#main" ).load( "/home.html" );
+async function Home(option) {
+  var option = option;
+  var li = document.getElementsByTagName("a");
+  for(i=0;i<li.length;i++){
+     li[i].classList.remove("active");
   }
+  document.getElementById(option).classList.add("active");
+  $("#main").load( "/home.html" );
+  // const contentDiv = document.getElementById("main");
+  // contentDiv.innerHTML = " "
+  // contentDiv.innerHTML = await fetchHtmlAsText("home.html");
+}
+async function about_me(option) {
+  var option = option;
+  var li = document.getElementsByTagName("a");
+  for(i=0;i<li.length;i++){
+     li[i].classList.remove("active");
+  }
+  document.getElementById(option).classList.add("active");
+  const contentDiv = document.getElementById("main");
+    $( "#main" ).load( "/about_me.html" );
+  // contentDiv.innerHTML = await fetchHtmlAsText("about_me.html");
+}
+async function projects(option) {
+  var option = option;
+  var li = document.getElementsByTagName("a");
+  for(i=0;i<li.length;i++){
+     li[i].classList.remove("active");
+  }
+  document.getElementById(option).classList.add("active");
+  const contentDiv = document.getElementById("main");
+      $( "#main" ).load("/projects/projects.html");
+}
+async function contact(option) {
+  var option = option;
+  var li = document.getElementsByTagName("a");
+  for(i=0;i<li.length;i++){
+     li[i].classList.remove("active");
+  }
+  document.getElementById(option).classList.add("active");
+  const contentDiv = document.getElementById("main");
+  $( "#main" ).load("/contact.html");
+}
+  // var myIndex = 0;
+  // carousel();
+  //
+  // function carousel() {
+  //   var i;
+  //   var x = document.getElementsByClassName("mySlides");
+  //   for (i = 0; i < x.length; i++) {
+  //     x[i].style.display = "none";
+  //   }
+  //   myIndex++;
+  //   if (myIndex > x.length) {myIndex = 1}
+  //   x[myIndex-1].style.display = "block";
+  //   setTimeout(carousel, 10000); // Change image every 2 seconds
+  // }
   </script>
 
 </body>
