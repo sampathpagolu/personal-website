@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<title> Lakshmi Sampath Pagolu </title>
+<style>
+body {
+  margin: 0;
+  font-family: Lucida Bright, Georgia, serif;
+  color: #3e3e3e;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #942f37;
+  color: white;
+}
+#myname{
+  text-align: center;
+  float: right;
+  color:  #ffffff ;
+  font-family: Lucida Bright, Georgia, serif;
+  font-size: 24px;
+}
+#my_image{
+  float: left;
+  border: solid 0.5px;
+  border-color: #942f37;
+}
+#title{
+  padding: 100px 70px;
+  //border: solid 0.5px #562125;
+  background-color:  #942f37;
+  margin-bottom: 100px;
+}
+.para{
+  text-align: right;
+  margin-right: 80px;
+}.mySlides {display:none;}
+</style>
+
+<body>
+  <div class="topnav">
+    <a class="active" href="./index.html"> Home</a>
+    <a href="./about_me.html">About Me</a>
+    <a href="./projects/projects.html">Projects</a>
+    <a href="./contact.html">Contact</a>
+  </div>
+  <br>
+  <div id="title">
+    <div class="slideshow" style="max-width:500px">
+    <img class="mySlides" src="./images/me.jpg" style="width:85%">
+    <img class="mySlides" src="./images/me1.jpg" style="width:100%">
+    <img class="mySlides" src="./images/me2.jpeg" style="width:100%">
+    <img class="mySlides" src="./images/me3.jpg" style="width:100%">
+    <img class="mySlides" src="./images/me4.jpg" style="width:100%">
+  </div>
+      <div id="myname">
+        <h1> Welcome to My Website</h1>
+      </div>
+  </div>
+  <p class="para">Learn about me in <b>About Me</b>. Find my expertise in <b>Projects</b>. If you wish to contact or find me on social media hit that <b> Contact</b>.<p>
+  <hr>
+  <p class="para"> This webpage is created and maintained by yours truly, Lakshmi Sampath Pagolu.</p>
+  <script>
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 10000); // Change image every 2 seconds
+  }
+  </script>
+
+</body>
+</html>
