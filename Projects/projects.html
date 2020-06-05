@@ -33,7 +33,17 @@ body {
 
   }
 </style>
+<script>
+async function projects() {
+  var xhr= new XMLHttpRequest();
+  xhr.open('GET', 'https://github.com/sampathpagolu/', true);
+  xhr.onreadystatechange= function() {
+      if (this.readyState!==4) return;
+      if (this.status!==200) return; // or whatever error handling you want
+      document.getElementById('main').innerHTML= this.responseText;
+  };
+</script>
 <body>
-<h1> Coming soon!</h1>
+<h1 id="main" onload="projects()"> </h1>
 </body>
 </html>

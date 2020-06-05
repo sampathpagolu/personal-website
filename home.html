@@ -3,42 +3,53 @@
 <style>
   body {
     font-family: Lucida Bright, Georgia, serif;
-    background-color: #942f37;
+    background-image: url("./images/pattern.png");
+    background-repeat: no-repeat;
+    background-size: auto;
   }
   h1{
-    font-size: 80px;
-
-
+    font-size: 40px;
   }
   .para{
-
-    font-size: 30px;
+    font-size: 20px;
+    text-align: right;
   }
-  #my_image{
+  #myimage{
     display: inline-block;
     vertical-align: middle;
     float:left;
-    border: solid 0.5px;
-    border-color: #942f39;
+    width: 35%;
+    pointer-events: none;
+    cursor: none;
   }
   #text{
-    margin-right: 50px;
     float: right;
-    text-align:right;
     vertical-align: middle;
-    color: white;
-
+    margin-right: 20px;
   }
+  #title{
+    /* background-color: #942f37; */
+    position: absolute;
+    text-align: right;
+
+    color: #DAA520;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+  }
+
 </style>
 <body>
 <div id="title">
-<img id="myimage" src="./images/me1.jpg" style="width:30%">
+<img id="myimage" src="./images/me1.jpg" >
 <div id="text">
-<h1  > Welcome to My Website</h1>
-<p class="para">Learn about me in <b>About Me</b>. Find my expertise in <b>Projects</b>. If you wish to contact or find me on social media hit<b> Contact</b>.<p>
-<hr >
+<h1>Welcome to my Website</h1>
+<p class="para">Learn about me, find my Projects or ways to contact me here.<p>
+<hr>
 <p class="para"> This webpage is created and maintained by Lakshmi Sampath Pagolu.</p>
 </div>
+
 </div>
 
 

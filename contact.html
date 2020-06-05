@@ -1,35 +1,64 @@
 <!DOCTYPE html>
 <html>
-<title> About Me </title>
+<title> Contact </title>
 <style>
-body {
+body{
+      background-image: url("./images/pattern.png");
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      -ms-background-size: cover;
+      -o-background-size: cover;
+      -moz-background-size: cover;
+      -webkit-background-size: cover;
+      background-size: cover;
+}
+#name{
+  font-size: 35px;
+  text-align: center;
+  color: #333;
+}
+#body-2 {
+    font-size: 10px;
     font-family: Lucida Bright, Georgia, serif;
-    color: #3e3e3e;
+    color: #333;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
   }
-  h3 {
-    text-indent: 30px;
-    color:  #942f37;
+  #logo{
+    width: 10%;
+    border: 10px solid transparent;
   }
-  h4{
-    text-indent: 50px;
-  }
-  p{
-    text-indent: 70px;
-  }
-  #totalborder{
-    margin: 30px;
-    border: 1px solid #942f37;
-    //background-color: #d2e1dd;
-  }
-  #personal{
-    padding: 100px
-    text-align: justify;
-    margin-left: 2em;
-
+  #email-logo{
+    width: 5%;
   }
   label{display:block;}
 </style>
 <body>
-<h1> Coming soon</h1>
+  <div id="body-2">
+  <h1 id="name">Lakshmi Sampath Somanath Pagolu</h1>
+<h1>Click on the links below to find me!</h1>
+<br><br>
+<div id=email>
+  <a href="mailto: lpagolu@ttu.edu" rel="noopener noreferrer" target="_blank">
+  <img id="email-logo" src="./images/email-logo.png">
+</div>
+<br>
+<div id="github">
+  <a href="https://github.com/sampathpagolu/" rel="noopener noreferrer" target="_blank">
+  <img id="logo" src="./images/github-logo.png">
+</div>
+<div id=insta>
+  <a href="https://www.instagram.com/sampathpagolu/" rel="noopener noreferrer" target="_blank">
+  <img id="logo" src="./images/insta-logo.png">
+</div>
+<div id=fb>
+  <a href="https://www.facebook.com/somanath.pagolu.5/" rel="noopener noreferrer" target="_blank">
+  <img id="logo" src="./images/fb-logo.png">
+</div>
+</div>
   </body>
   </html>

@@ -8,7 +8,7 @@ body {
   }
   h3 {
     text-indent: 30px;
-    color:  #942f37;
+    color: #daa520;
   }
   h4{
     text-indent: 50px;
@@ -18,24 +18,53 @@ body {
   }
   ul{
     list-style-type:none;
-    text-align: justified;
+    text-align: justify;
     line-height: 1.8;
-    padding-left: 10px;
+    padding-left: 70px;
+    margin-right: 2em;
   }
-  #totalborder{
+  .totalborder{
     margin: 30px;
-    border: 1px solid #942f37;
-    //background-color: #d2e1dd;
+    border: 1px solid #daa520;
   }
   #personal{
-    padding: 100px
-    text-align: justify;
     margin-left: 2em;
-
+    text-align: justify;
+    margin-right: 2em;
+  }
+  .button {
+    background-color: #daa520;
+    position: absolute;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    display:inline-block;
+  }
+  .button1 {
+    background-color: #daa520;
+    position: absolute;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    display:inline-block;
   }
 </style>
 <body>
-<div id=totalborder>
+<div class="totalborder">
 <br>
   <p id="personal" style="text-indent: 0px;">I am Lakshmi Sampath Somanath Pagolu, a computer geek. I am originally from the country of rich culture and heritage India. I am a Hyderabadi lost in Texas.
   I love making and eating food. In fact, cooking is my hobby.
@@ -49,9 +78,16 @@ body {
   </div>
   <div id=experience>
   <h3>Experience</h3>
+      <h4> Texas Tech university</h4>
+      <p> <b>Student assistant</b> - Feb 2020 - present</p>
+      <ul>
+        <li>Helping students, staff, and faculty with their general IT problems over phone o with networking, hardware, and software troubleshooting</li>
+        <li>With software installations </li>
+        <li>Creating Knowledge base articles for AskIT solutions portal</li>
+      </ul>
       <h4> Liquidhub India Private Limited</h4>
       <p><b> Jr. Cloud Engineer & Intern</b><i>(24 months)</i> - Jan 2018 - Dec 2019</p>
-      <ul style="text-indent: 70px;">
+      <ul>
         <li>Worked on providing Infrastructure solutions in multiple Cloud Vendors such as AWS, Azure and Google Cloud Platform.</li>
         <li>Patching Linux servers, Network administration and, troubleshooting</li>
         <li>Provided application administration support for Dev, QA, Prod and DR environments</li>
@@ -60,9 +96,10 @@ body {
         <li>Patching of Windows servers and WordPress websites management and, maintaining DevOps pipelines</li>
       </ul>
   </div>
+
   <div id= Technicalskills>
   <h3>Technical Skills</h3>
-  <ul style="text-indent: 60px;">
+  <ul>
     <li><b><u>AWS Certified Solutions Architect Associate </u></b></li>
     <li><b>Cloud</b>: AWS, Azure, GCP</li>
     <li><b>OS</b>: RedHat, CentOS Ubuntu, Fedora</li>
@@ -72,7 +109,11 @@ body {
     <li><b>Configuration Management</b>: Ansible</li>
     <li>Basic understanding and ability in writing SQL queries</li>
   </div>
-  <br>
+  </div>
+<a href="./CV-pagolu.pdf" rel="noopener noreferrer" target="_blank" class="button"> Download Resume </a>
+<a href="./AWS-Certificate.pdf" rel="noopener noreferrer" target="_blank" class="button1"> Download AWS Certificate </a>
+<br><br>
+<!-- </div> -->
 </div>
 </body>
 </html>

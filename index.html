@@ -5,10 +5,11 @@
 body {
   margin: 0;
   font-family: Lucida Bright, Georgia, serif;
-  color: #3e3e3e;
+  color: white;
 }
 
 .topnav {
+  text-align: center;
   overflow: hidden;
   background-color: #333;
 }
@@ -17,42 +18,24 @@ body {
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 50px;
   text-decoration: none;
   font-size: 17px;
 }
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #DAA520;
+  color: #333;
+  cursor: pointer;
 }
 
 .topnav a.active {
-  background-color: #942f37;
+  background-color: #DAA520;
   color: white;
 }
-/* #myname{
-  text-align: center;
-  float: right;
-  color:  #ffffff ;
-  font-family: Lucida Bright, Georgia, serif;
-  font-size: 24px;
+#main{
+  width:100%;
 }
-#my_image{
-  float: left;
-  border: solid 0.5px;
-  border-color: #942f37;
-}
-#title{
-  padding: 100px 70px;
-  //border: solid 0.5px #562125;
-  background-color:  #942f37;
-  margin-bottom: 100px;
-}
-.para{
-  text-align: right;
-  margin-right: 80px;
-}.mySlides {display:none;} */
 </style>
 
 <body>
@@ -64,30 +47,17 @@ body {
   </div>
   <div id="main"></div>
   <div id=content></div>
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> -->
 
-      <!-- $(document).ready(function(){
-      $('#main').load('/home.html #main')}); -->
-<!-- </script> -->
 <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 <script>
-// onloadstart= document.getElementById("main").innerHTML = loadPage('/home.html');
-// function loadPage(href)
-//             {
-//                 var href = href
-//                 var xmlhttp = new XMLHttpRequest();
-//                 xmlhttp.open("GET", href);
-//                 xmlhttp.send();
-//                 return xmlhttp.responseText;
-//             }
-//    async function fetchHtmlAsText(url) {
-//      const response = await fetch(url);
-//       return await response.text();
-  // async function home(){
-  // const contentDiv = document.getElementById("main");
-  // contentDiv.innerHTML = await fetchHtmlAsText("home.html");
-// }
-$( "#main" ).load( "/home.html" );
+var xhr= new XMLHttpRequest();
+xhr.open('GET', 'home.html', true);
+xhr.onreadystatechange= function() {
+    if (this.readyState!==4) return;
+    if (this.status!==200) return; // or whatever error handling you want
+    document.getElementById('main').innerHTML= this.responseText;
+};
+xhr.send();
 async function Home(option) {
   var option = option;
   var li = document.getElementsByTagName("a");
@@ -95,10 +65,14 @@ async function Home(option) {
      li[i].classList.remove("active");
   }
   document.getElementById(option).classList.add("active");
-  $("#main").load( "/home.html" );
-  // const contentDiv = document.getElementById("main");
-  // contentDiv.innerHTML = " "
-  // contentDiv.innerHTML = await fetchHtmlAsText("home.html");
+  var xhr= new XMLHttpRequest();
+  xhr.open('GET', './home.html', true);
+  xhr.onreadystatechange= function() {
+      if (this.readyState!==4) return;
+      if (this.status!==200) return; // or whatever error handling you want
+      document.getElementById('main').innerHTML= this.responseText;
+  };
+  xhr.send();
 }
 async function about_me(option) {
   var option = option;
@@ -108,8 +82,14 @@ async function about_me(option) {
   }
   document.getElementById(option).classList.add("active");
   const contentDiv = document.getElementById("main");
-    $( "#main" ).load( "/about_me.html" );
-  // contentDiv.innerHTML = await fetchHtmlAsText("about_me.html");
+  var xhr= new XMLHttpRequest();
+  xhr.open('GET', './about_me.html', true);
+  xhr.onreadystatechange= function() {
+      if (this.readyState!==4) return;
+      if (this.status!==200) return; // or whatever error handling you want
+      document.getElementById('main').innerHTML= this.responseText;
+  };
+  xhr.send();
 }
 async function projects(option) {
   var option = option;
@@ -119,7 +99,14 @@ async function projects(option) {
   }
   document.getElementById(option).classList.add("active");
   const contentDiv = document.getElementById("main");
-      $( "#main" ).load("/projects/projects.html");
+  var xhr= new XMLHttpRequest();
+  xhr.open('GET', './projects/projects.html', true);
+  xhr.onreadystatechange= function() {
+      if (this.readyState!==4) return;
+      if (this.status!==200) return; // or whatever error handling you want
+      document.getElementById('main').innerHTML= this.responseText;
+  };
+  xhr.send();
 }
 async function contact(option) {
   var option = option;
@@ -129,22 +116,15 @@ async function contact(option) {
   }
   document.getElementById(option).classList.add("active");
   const contentDiv = document.getElementById("main");
-  $( "#main" ).load("/contact.html");
+  var xhr= new XMLHttpRequest();
+  xhr.open('GET', './contact.html', true);
+  xhr.onreadystatechange= function() {
+      if (this.readyState!==4) return;
+      if (this.status!==200) return; // or whatever error handling you want
+      document.getElementById('main').innerHTML= this.responseText;
+  };
+  xhr.send();
 }
-  // var myIndex = 0;
-  // carousel();
-  //
-  // function carousel() {
-  //   var i;
-  //   var x = document.getElementsByClassName("mySlides");
-  //   for (i = 0; i < x.length; i++) {
-  //     x[i].style.display = "none";
-  //   }
-  //   myIndex++;
-  //   if (myIndex > x.length) {myIndex = 1}
-  //   x[myIndex-1].style.display = "block";
-  //   setTimeout(carousel, 10000); // Change image every 2 seconds
-  // }
   </script>
 
 </body>
