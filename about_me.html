@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
+<link rel="stylesheet" type="text/css"href="./css/menubar.css">
 </head>
 <title> About Me </title>
 <style>
@@ -68,6 +69,12 @@ body {
   }
 </style>
 <body>
+  <div class="topnav">
+    <a onclick="Home('home')" href="./" id="home"> Home</a>
+    <a class="active" onclick="about_me('about')" href="./about_me.html" id="about"> About Me</a>
+    <a onclick="projects('projects')" href="https://github.com/sampathpagolu" id="projects">Projects</a>
+    <a onclick="contact('contact')" href="./contact.html" id="contact">Contact</a>
+  </div>
 <div class="totalborder">
 <br>
   <p id="personal" style="text-indent: 0px;">I am Lakshmi Sampath Somanath Pagolu, a computer geek. I am originally from the country of rich culture and heritage India. I am a Hyderabadi lost in Texas.
@@ -83,14 +90,14 @@ body {
   <div id=experience>
   <h3>Experience</h3>
       <h4> Texas Tech university</h4>
-      <p> <b>Student assistant</b> - Feb 2020 - present</p>
+      <p> <b>Graduate Student Technician</b> - Feb 2020 - present</p>
       <ul>
-        <li>Helping students, staff, and faculty with their general IT problems over phone o with networking, hardware, and software troubleshooting</li>
-        <li>With software installations </li>
-        <li>Creating Knowledge base articles for AskIT solutions portal</li>
+        <li>Helping and supervising fellow student assistants</li>
+        <li>Helping students, staff, and faculty with their general IT problems with networking, hardware, and software troubleshooting</li>
+        <li>Creating new and interactive Knowledge base articles</li>
       </ul>
       <h4> Liquidhub India Private Limited</h4>
-      <p><b> Jr. Cloud Engineer & Intern</b><i>(24 months)</i> - Jan 2018 - Dec 2019</p>
+      <p><b> Cloud Engineer & Intern</b><i>(24 months)</i> - Jan 2018 - Dec 2019</p>
       <ul>
         <li>Worked on providing Infrastructure solutions in multiple Cloud Vendors such as AWS, Azure and Google Cloud Platform.</li>
         <li>Patching Linux servers, Network administration and, troubleshooting</li>
@@ -98,6 +105,10 @@ body {
         <li>Worked with Dev, QA teams for seamless and automatic deployments of code to QA, Prod and DR environments using DevOps methodologies and tools</li>
         <li>Worked on providing secure, multi-tiered architectures on AWS, Azure using Terraform</li>
         <li>Patching of Windows servers and WordPress websites management and, maintaining DevOps pipelines</li>
+        <li>Migrated On-Prem Dev environments to Azure cloud by planning and designing the architecture and network.</li>
+        <li>Automating using AWS lambda</li>
+        <li>Worked with internal R&D team to test out cutting edge technologies</li>
+        <li>Provisioned and suported Docker and Kubernetes environments</li>
       </ul>
   </div>
 
@@ -106,18 +117,34 @@ body {
   <ul>
     <li><b><u>AWS Certified Solutions Architect Associate </u></b></li>
     <li><b>Cloud</b>: AWS, Azure, GCP</li>
-    <li><b>OS</b>: RedHat, CentOS Ubuntu, Fedora</li>
-    <li><b>package managers</b>: yum, rpm, dnf, apt	</li>
-    <li><b>Scripting</b>: Bash, PowerShell</li>
-    <li><b>Programming languages</b>: Python, C, JavaScript		</li>
+    <li>Docker, Kubernetes</li>
+    <li><b>SCM</b>: Git, GitLab, Github, BitBucket</li>
+    <li><b>DevOps tools</b>: Jenkins, CircleCI, Azure DevOps, Amazon Developer tools, TFS, Octopus Deploy</li>
+    <li><b>Build tools</b>: Maven, Gradle, nuget</li>
+    <li><b>OS</b>: RedHat, CentOS Ubuntu, Fedora, Windows Server</li>
     <li><b>Configuration Management</b>: Ansible</li>
-    <li>Basic understanding and ability in writing SQL queries</li>
+    <li><b>Infrastructure as Code</b>:Terraform</li>
+    <li><b>Web servers</b>: Apache Tomcat, Nginx</li>
+    <li><b>Database Administration</b>/: MySQL, PostgresSQL, MSSQL</li>
+    <li><b>package managers</b>: Make, yum, rpm, dnf, apt</li>
+    <li><b>Scripting</b>: Bash, PowerShell</li>
+    <li><b>Programming languages</b>: Python, C++</li>
+    <li><b>Web Development</b>: JavaScript</li>
+  </ul>
   </div>
+  <div id=extracurriculars>
+    <h3>Extra and Co-Curriculars</h3>
+    <ul>
+      <li>Orgnized multiple college fests and events</li>
+      <li>Organized workshops on Fitness band and Brain controlled robot</li>
+      <li>Gave multiple presentations on advanced topics such as Servish Mesh architectures, DevSecOps, etc</li>
+    </ul>
   </div>
 <a href="./CV-pagolu.pdf" rel="noopener noreferrer" target="_blank" class="button"> Download Resume </a>
 <a href="./AWS-Certificate.pdf" rel="noopener noreferrer" target="_blank" class="button1"> Download AWS Certificate </a>
 <br><br>
 <!-- </div> -->
 </div>
+  <script type="text/javascript" src="./js/menubar.js"></script>
 </body>
 </html>

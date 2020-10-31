@@ -3,40 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
+<link rel="stylesheet" type="text/css"href="/css/menubar.css">
 </head>
 <title> About Me </title>
-<style>
-body {
-    font-family: Lucida Bright, Georgia, serif;
-    color: #3e3e3e;
-  }
-  h3 {
-    text-indent: 30px;
-    color:  #942f37;
-  }
-  h4{
-    text-indent: 50px;
-  }
-  p{
-    text-indent: 70px;
-  }
-  ul{
-    list-style-type:none;
-    line-height: 1.8;
-    padding-left: 10px;
-  }
-  #totalborder{
-    margin: 30px;
-    border: 1px solid #942f37;
-    //background-color: #d2e1dd;
-  }
-  #personal{
-    padding: 100px
-    text-align: justify;
-    margin-left: 2em;
-
-  }
-</style>
 <script>
 async function projects() {
   var xhr= new XMLHttpRequest();
@@ -46,8 +15,17 @@ async function projects() {
       if (this.status!==200) return; // or whatever error handling you want
       document.getElementById('main').innerHTML= this.responseText;
   };
+    xhr.send();
+};
 </script>
 <body>
-<h1 id="main" onload="projects()"> </h1>
+  <div class="topnav">
+    <a class="active" onclick="Home('home')" href="./index.html" id="home"> Home</a>
+    <a onclick="about_me('about')" href="./about_me.html" id="about"> About Me</a>
+    <a onclick="projects('projects')" href="./projects/projects.html"id="projects">Projects</a>
+    <a onclick="contact('contact')" href="./contact.html" id="contact">Contact</a>
+  </div>
+<h1 id="main" beforeload="projects()"> </h1>
+  <script type="text/javascript" src="./js/menubar.js">
 </body>
 </html>

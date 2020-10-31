@@ -3,133 +3,82 @@
 <head>
 <meta charset="UTF-8">
 <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
+<link rel="stylesheet" type="text/css"href="./css/menubar.css">
 </head>
 <title> Lakshmi Sampath Pagolu </title>
 <style>
 body {
-  margin: 0;
   font-family: Lucida Bright, Georgia, serif;
-  color: white;
+  background-image: url("./images/pattern.png");
 }
-
-.topnav {
-  text-align: center;
-  overflow: hidden;
-  background-color: #333;
+h1{
+  font-size: 40px;
 }
-
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 10px 50px;
-  text-decoration: none;
-  font-size: 17px;
+.para{
+  font-size: 20px;
+  text-align: right;
+  clear: both;
 }
-
-.topnav a:hover {
-  background-color: #DAA520;
-  color: #333;
-  cursor: pointer;
+#myimage{
+  display: inline-block;
+  vertical-align: middle;
+  float:left;
+  width: 35%;
+  pointer-events: none;
+  cursor: none;
 }
-
-.topnav a.active {
-  background-color: #DAA520;
-  color: white;
+#text{
+  float: right;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+#title{
+  /* background-color: #942f37; */
+  position: absolute;
+  text-align: right;
+  clear: both;
+  color: #DAA520;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+#disc{
+color: black;
+font-size: 15px;
+margin-right:0px;
+text-align: right;
+position: absolute;
+top:96%;
+left:60%;
+transform: translate(-90%, -50%);
 }
 #main{
   width:100%;
 }
+
 </style>
 
 <body>
-  <div class="topnav">
-    <a class="active" onclick="Home('home')" id="home"> Home</a>
-    <a onclick="about_me('about')" id="about"> About Me</a>
-    <a onclick="projects('projects')" id="projects">Projects</a>
-    <a onclick="contact('contact')" id="contact">Contact</a>
-  </div>
-  <div id="main"></div>
-  <div id=content></div>
 
-<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-<script>
-var xhr= new XMLHttpRequest();
-xhr.open('GET', 'home.html', true);
-xhr.onreadystatechange= function() {
-    if (this.readyState!==4) return;
-    if (this.status!==200) return; // or whatever error handling you want
-    document.getElementById('main').innerHTML= this.responseText;
-};
-xhr.send();
-async function Home(option) {
-  var option = option;
-  var li = document.getElementsByTagName("a");
-  for(i=0;i<li.length;i++){
-     li[i].classList.remove("active");
-  }
-  document.getElementById(option).classList.add("active");
-  var xhr= new XMLHttpRequest();
-  xhr.open('GET', './home.html', true);
-  xhr.onreadystatechange= function() {
-      if (this.readyState!==4) return;
-      if (this.status!==200) return; // or whatever error handling you want
-      document.getElementById('main').innerHTML= this.responseText;
-  };
-  xhr.send();
-}
-async function about_me(option) {
-  var option = option;
-  var li = document.getElementsByTagName("a");
-  for(i=0;i<li.length;i++){
-     li[i].classList.remove("active");
-  }
-  document.getElementById(option).classList.add("active");
-  const contentDiv = document.getElementById("main");
-  var xhr= new XMLHttpRequest();
-  xhr.open('GET', './about_me.html', true);
-  xhr.onreadystatechange= function() {
-      if (this.readyState!==4) return;
-      if (this.status!==200) return; // or whatever error handling you want
-      document.getElementById('main').innerHTML= this.responseText;
-  };
-  xhr.send();
-}
-async function projects(option) {
-  var option = option;
-  var li = document.getElementsByTagName("a");
-  for(i=0;i<li.length;i++){
-     li[i].classList.remove("active");
-  }
-  document.getElementById(option).classList.add("active");
-  const contentDiv = document.getElementById("main");
-  var xhr= new XMLHttpRequest();
-  xhr.open('GET', './projects/projects.html', true);
-  xhr.onreadystatechange= function() {
-      if (this.readyState!==4) return;
-      if (this.status!==200) return; // or whatever error handling you want
-      document.getElementById('main').innerHTML= this.responseText;
-  };
-  xhr.send();
-}
-async function contact(option) {
-  var option = option;
-  var li = document.getElementsByTagName("a");
-  for(i=0;i<li.length;i++){
-     li[i].classList.remove("active");
-  }
-  document.getElementById(option).classList.add("active");
-  const contentDiv = document.getElementById("main");
-  var xhr= new XMLHttpRequest();
-  xhr.open('GET', './contact.html', true);
-  xhr.onreadystatechange= function() {
-      if (this.readyState!==4) return;
-      if (this.status!==200) return; // or whatever error handling you want
-      document.getElementById('main').innerHTML= this.responseText;
-  };
-  xhr.send();
-}
-  </script>
+  <div class="topnav">
+    <a class="active" onclick="Home('home')" href="./" id="home"> Home</a>
+    <a onclick="about_me('about')" href="./about_me.html" id="about"> About Me</a>
+    <a onclick="projects('projects')" href="https://github.com/sampathpagolu" id="projects">Projects</a>
+    <a onclick="contact('contact')" href="./contact.html" id="contact">Contact</a>
+  </div>
+  <div id="main">
+  <div id="title">
+  <img id="myimage" src="./images/me1.jpg" >
+  <div id="text">
+  <h1>Welcome to my Website</h1>
+  <p class="para">Learn about me, find my Projects or ways to contact me here.<p>
+  <hr>
+  <p class="para"> This webpage is created and maintained by Lakshmi Sampath Pagolu.</p>
+</div>
+</div>
+</div>
+  <p id="disc"> Best viewed in a desktop broswer. Use Chrome or Firefox.</p>
 
 </body>
 </html>

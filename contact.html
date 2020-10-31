@@ -3,18 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
+<link rel="stylesheet" type="text/css"href="./css/menubar.css">
 </head>
 <title> Contact </title>
 <style>
 body{
       background-image: url("./images/pattern.png");
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      -ms-background-size: cover;
-      -o-background-size: cover;
-      -moz-background-size: cover;
-      -webkit-background-size: cover;
-      background-size: cover;
 }
 #name{
   font-size: 35px;
@@ -42,6 +36,12 @@ body{
   label{display:block;}
 </style>
 <body>
+    <div class="topnav">
+      <a  onclick="Home('home')" href="./" id="home"> Home</a>
+      <a onclick="about_me('about')" href="./about_me.html" id="about"> About Me</a>
+      <a onclick="projects('projects')" href="https://github.com/sampathpagolu" id="projects">Projects</a>
+      <a class="active" onclick="contact('contact')" href="./contact.html" id="contact">Contact</a>
+    </div>
   <div id="body-2">
   <h1 id="name">Lakshmi Sampath Somanath Pagolu</h1>
 <h1>Click on the links below to find me!</h1>
@@ -60,9 +60,10 @@ body{
   <img id="logo" src="./images/insta-logo.png">
 </div>
 <div id=fb>
-  <a href="https://www.facebook.com/somanath.pagolu.5/" rel="noopener noreferrer" target="_blank">
+  <a href="http://www.facebook.com/somanathpagolu/" rel="noopener noreferrer" target="_blank">
   <img id="logo" src="./images/fb-logo.png">
 </div>
 </div>
+
   </body>
   </html>
