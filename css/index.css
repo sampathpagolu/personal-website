@@ -1,0 +1,31 @@
+body {
+    font-family: 'Abril Fatface', cursive;
+    background-image: url("../images/me2.jpg");
+    /* background-size: ; */
+    /* background-position: -30% 15%; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  h1 {
+    font-size: 65px;
+    color: white;
+    background-color:#808080;
+    width: 49%;
+    top: 50%;
+    text-align: center;
+  }
+  #text {
+    font-size: 22px;
+    color: white;
+    float: left;
+    top:50%;
+  }
+  .para{
+    /* margin: 0, auto; */
+    width: 49%;
+    word-wrap: break;
+    background-color: #808080;
+  }

@@ -1,84 +1,51 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
-<meta charset="UTF-8">
-<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
-<link rel="stylesheet" type="text/css"href="./css/menubar.css">
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
+  <link rel="stylesheet" type="text/css" href="./css/menubar.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/index.css">
 </head>
 <title> Lakshmi Sampath Pagolu </title>
-<style>
-body {
-  font-family: Lucida Bright, Georgia, serif;
-  background-image: url("./images/pattern.png");
-}
-h1{
-  font-size: 40px;
-}
-.para{
-  font-size: 20px;
-  text-align: right;
-  clear: both;
-}
-#myimage{
-  display: inline-block;
-  vertical-align: middle;
-  float:left;
-  width: 35%;
-  pointer-events: none;
-  cursor: none;
-}
-#text{
-  float: right;
-  vertical-align: middle;
-  margin-right: 20px;
-}
-#title{
-  /* background-color: #942f37; */
-  position: absolute;
-  text-align: right;
-  clear: both;
-  color: #DAA520;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%)
-}
-#disc{
-color: black;
-font-size: 15px;
-margin-right:0px;
-text-align: right;
-position: absolute;
-top:96%;
-left:60%;
-transform: translate(-90%, -50%);
-}
-#main{
-  width:100%;
-}
-
-</style>
-
 <body>
 
   <div class="topnav">
     <a class="active" onclick="Home('home')" href="./" id="home"> Home</a>
     <a onclick="about_me('about')" href="./about_me.html" id="about"> About Me</a>
-    <a onclick="projects('projects')" href="https://github.com/sampathpagolu" id="projects">Projects</a>
+    <a onclick="projects('projects')" href="https://github.com/sampathpagolu" target="_blank" rel="noopener noreferrer"
+      id="projects">Projects</a>
     <a onclick="contact('contact')" href="./contact.html" id="contact">Contact</a>
   </div>
   <div id="main">
-  <div id="title">
-  <img id="myimage" src="./images/me1.jpg" >
-  <div id="text">
-  <h1>Welcome to my Website</h1>
-  <p class="para">Learn about me, find my Projects or ways to contact me here.<p>
-  <hr>
-  <p class="para"> This webpage is created and maintained by Lakshmi Sampath Pagolu.</p>
-</div>
-</div>
-</div>
-  <p id="disc"> Best viewed in a desktop broswer. Use Chrome or Firefox.</p>
 
+    <div id="title">
+      <!-- <img id="myimage" src="./images/me1.jpg"> -->
+      <div id="text">
+        <h1>Lakshmi Sampath</h1>
+        <!-- <h1> </h1> -->
+        <h1>Pagolu</h1>
+        <div id="info"></div>
+        <p class="para">Learn about me, find my Projects or ways to contact me here.
+        <p class="para">A computer geek. I am originally
+          from the country of rich culture and heritage India. I am a Hyderabadi lost in Texas.
+          I love making and eating food. In fact, cooking is my hobby. I love riding Motorbikes, cooking. I am always
+          curious!</p>
+        <p class="para">I am an experienced Cloud engineer. I have worked across multiple teams in
+          different projects to provide
+          and support teams with their infrastrctural and DevOps needs. I am experienced in providing infrastructure
+          using infrastructure as code tools like
+          Terraform and Cloud Formation. I have configured VPCs according to the security practices and industry
+          standards. I am experienced in server management and troubleshoting.
+          Currently, I am pursuing Master's in Science at Texas Tech University, Lubbock, USA. My area of focus is
+          Knowledge Distillation in Neural Networks.
+        </p</>
+      </div>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>

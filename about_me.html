@@ -1,73 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
-<meta charset="UTF-8">
-<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
-<link rel="stylesheet" type="text/css"href="./css/menubar.css">
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
+  <link rel="stylesheet" type="text/css" href="./css/menubar.css">
+  <link rel="stylesheet" type="text/css" href="./css/about_me.css">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
 </head>
 <title> About Me </title>
 <style>
-body {
-    font-family: Lucida Bright, Georgia, serif;
-    color: #3e3e3e;
-  }
-  h3 {
-    text-indent: 30px;
-    color: #daa520;
-  }
-  h4{
-    text-indent: 50px;
-  }
-  p{
-    text-indent: 70px;
-  }
-  ul{
-    list-style-type:none;
-    text-align: justify;
-    line-height: 1.8;
-    padding-left: 70px;
-    margin-right: 2em;
-  }
-  .totalborder{
-    margin: 30px;
-    border: 1px solid #daa520;
-  }
-  #personal{
-    margin-left: 2em;
-    text-align: justify;
-    margin-right: 2em;
-  }
-  .button {
-    background-color: #daa520;
-    position: absolute;
-    left: 45%;
-    transform: translate(-50%, -50%);
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    display:inline-block;
-  }
-  .button1 {
-    background-color: #daa520;
-    position: absolute;
-    left: 60%;
-    transform: translate(-50%, -50%);
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    display:inline-block;
-  }
+  
 </style>
+
 <body>
   <div class="topnav">
     <a onclick="Home('home')" href="./" id="home"> Home</a>
@@ -75,76 +20,105 @@ body {
     <a onclick="projects('projects')" href="https://github.com/sampathpagolu" id="projects">Projects</a>
     <a onclick="contact('contact')" href="./contact.html" id="contact">Contact</a>
   </div>
-<div class="totalborder">
-<br>
-  <p id="personal" style="text-indent: 0px;">I am Lakshmi Sampath Somanath Pagolu, a computer geek. I am originally from the country of rich culture and heritage India. I am a Hyderabadi lost in Texas.
-  I love making and eating food. In fact, cooking is my hobby.
-  I love riding Motorbikes, cooking. I am always curious! Below you will find my professional details.</p>
-  <div id=education>
-  <h3 >Education</h3>
-    <h4> Texas Tech University, Lubbock</h4>
-    <p> <b>Major</b>: Computer Science | <b>GPA</b>: 4.0 | <b>Graduation</b>: May, 2021</p>
-    <h4> GITAM University, India</h4>
-    <p><b>Major</b>: Electronics and Communications | <b>GPA</b>: 3.8 | <b>Graduation</b>: May, 2018</p>
-  </div>
-  <div id=experience>
-  <h3>Experience</h3>
+  <div class="totalborder">
+    <br>
+    <div id=Technicalskills>
+      <h3>Technical Skills</h3>
+      <ul>
+        <li><a href="./AWS-Certificate.pdf" rel="noopener noreferrer" target="_blank"> Certified Solutions Architect
+            Associate </a></li>
+        <li><b>Cloud</b>: AWS, Azure, GCP</li>
+        <li>AWS RDS, DynamoDB, Cognito, AWS Lambda, EC2, ECS, EKS</li>
+        <li>Docker, Kubernetes</li>
+        <li><b>SCM/VCS</b>: Git, GitLab, Github, BitBucket</li>
+        <li><b>DevOps tools</b>: Jenkins, CircleCI, Azure DevOps, Amazon Developer tools, TFS, Octopus Deploy</li>
+        <li><b>Build tools</b>: Maven, Gradle, nuget</li>
+        <li><b>OS</b>: RedHat, CentOS Ubuntu, Fedora, Windows Server</li>
+        <li><b>Configuration Management</b>: Ansible</li>
+        <li><b>Infrastructure as Code</b>:Terraform, Cloud Formation</li>
+        <li><b>Web servers</b>: Apache Tomcat, Nginx</li>
+        <li><b>Database Administration</b>: MySQL, PostgresSQL, MSSQL</li>
+        <li>SQL</li>
+        <li><b>package managers</b>: Make, yum, rpm, dnf, apt</li>
+        <li><b>Scripting</b>: Bash, PowerShell</li>
+        <li><b>Programming languages</b>: Python, C++, C</li>
+        <li><b>Web Development</b>: JavaScript, Node.JS</li>
+        <li>PCA, LDA, SVM</li>
+        <li>Regression Analyis, Decision Trees</li>
+        <li>Convolutional Neural Networks, Recursive Neural Networks, Residual Networks, LSTM</li>
+      </ul>
+    </div>
+    <div id=experience>
+      <h3>Experience</h3>
       <h4> Texas Tech university</h4>
-      <p> <b>Graduate Student Technician</b> - Feb 2020 - present</p>
+      <p> <b>Cloud Engineer and Programmer</b> - Jan 2021 - present</p>
+      <ul>
+        <li>Improving the functionality of the existing code (Node.JS) and adding new functionality</li>
+        <li>Deploying and maintaining Elastic Beanstalk</li>
+        <li>Creating Lambda functions for effective log management of deliver ed notifications.</li>
+        <li>Configured, managing, and maintaining DynamoDB tables.</li>
+        <li>Managing users using Amazon Cognito</li>
+        <li>Maintaining IAM roles, users according to best practices</li>
+      </ul>
+      <h4> Texas Tech university</h4>
+      <p> <b>Graduate Student Technician</b><i>12 months</i> - Feb 2020 - present</p>
       <ul>
         <li>Helping and supervising fellow student assistants</li>
-        <li>Helping students, staff, and faculty with their general IT problems with networking, hardware, and software troubleshooting</li>
+        <li>Helping students, staff, and faculty with their general IT problems with networking, hardware, and software
+          troubleshooting</li>
         <li>Creating new and interactive Knowledge base articles</li>
+        <li>Working with multiple teams and increasing productivity of individual tea m with experience from the other
+          team.</li>
       </ul>
       <h4> Liquidhub India Private Limited</h4>
-      <p><b> Cloud Engineer & Intern</b><i>(24 months)</i> - Jan 2018 - Dec 2019</p>
+      <p><b> Cloud Engineer & Intern</b><i>(30 months/ 2.5 years)</i> - Jul 2017 - Dec 2019</p>
       <ul>
-        <li>Worked on providing Infrastructure solutions in multiple Cloud Vendors such as AWS, Azure and Google Cloud Platform.</li>
+        <li>Worked on providing Infrastructure solutions in multiple Cloud Vendors such as AWS, Azure and Google Cloud
+          Platform.</li>
+        <li>Provide updates across multiple teams and reported daily about the projects in Scrum calls</li>
         <li>Patching Linux servers, Network administration and, troubleshooting</li>
         <li>Provided application administration support for Dev, QA, Prod and DR environments</li>
-        <li>Worked with Dev, QA teams for seamless and automatic deployments of code to QA, Prod and DR environments using DevOps methodologies and tools</li>
+        <li>Worked with Dev, QA teams for seamless and automatic deployments of code to QA, Prod and DR environments
+          using DevOps methodologies and tools</li>
+        <li>Configured DevOps pipelines using Jenkins, Sonatypes nexus and Ansible</li>
+        <li>Primary contact for 3 projects. On-call engineer for 3 projects at all times</li>
         <li>Worked on providing secure, multi-tiered architectures on AWS, Azure using Terraform</li>
         <li>Patching of Windows servers and WordPress websites management and, maintaining DevOps pipelines</li>
-        <li>Migrated On-Prem Dev environments to Azure cloud by planning and designing the architecture and network.</li>
+        <li>Migrated On-Prem Dev environment which contained 50+ VMs to Azure cloud by planning and designing the architecture and network.
+        </li>
         <li>Automating using AWS lambda</li>
         <li>Worked with internal R&D team to test out cutting edge technologies</li>
         <li>Provisioned and suported Docker and Kubernetes environments</li>
       </ul>
-  </div>
+    </div>
 
-  <div id= Technicalskills>
-  <h3>Technical Skills</h3>
-  <ul>
-    <li><b><u>AWS Certified Solutions Architect Associate </u></b></li>
-    <li><b>Cloud</b>: AWS, Azure, GCP</li>
-    <li>Docker, Kubernetes</li>
-    <li><b>SCM</b>: Git, GitLab, Github, BitBucket</li>
-    <li><b>DevOps tools</b>: Jenkins, CircleCI, Azure DevOps, Amazon Developer tools, TFS, Octopus Deploy</li>
-    <li><b>Build tools</b>: Maven, Gradle, nuget</li>
-    <li><b>OS</b>: RedHat, CentOS Ubuntu, Fedora, Windows Server</li>
-    <li><b>Configuration Management</b>: Ansible</li>
-    <li><b>Infrastructure as Code</b>:Terraform</li>
-    <li><b>Web servers</b>: Apache Tomcat, Nginx</li>
-    <li><b>Database Administration</b>/: MySQL, PostgresSQL, MSSQL</li>
-    <li><b>package managers</b>: Make, yum, rpm, dnf, apt</li>
-    <li><b>Scripting</b>: Bash, PowerShell</li>
-    <li><b>Programming languages</b>: Python, C++</li>
-    <li><b>Web Development</b>: JavaScript</li>
-  </ul>
+    
+    <div id=extracurriculars>
+      <h3>Extra and Co-Curriculars</h3>
+      <ul>
+        <li>Orgnized multiple college fests and events</li>
+        <li>Organized workshops on Fitness band and Brain controlled robot</li>
+        <li>Gave multiple presentations on advanced topics such as Service Mesh architectures, DevSecOps, etc</li>
+      </ul>
+    </div>
+    <div id=education>
+      <h3>Education</h3>
+      <h4> Texas Tech University, Lubbock</h4>
+      <p> <b>Major</b>: Computer Science | <b>GPA</b>: 3.5 | <b>Graduation</b>: May, 2021</p>
+      <p><b> Related Course work</b>: Information retrieval, Machine Learning, Pattern based software Engineering, Analysis of algorithms</p>
+      <h4> GITAM University, India</h4>
+      <p><b>Major</b>: Electronics and Communications | <b>GPA</b>: 3.8 | <b>Graduation</b>: May, 2018</p>
+      <p><b> Related Course work</b>: Data Structures, Programming with C and C++, DBMS, Web Technologies</p>
+    </div>
   </div>
-  <div id=extracurriculars>
-    <h3>Extra and Co-Curriculars</h3>
-    <ul>
-      <li>Orgnized multiple college fests and events</li>
-      <li>Organized workshops on Fitness band and Brain controlled robot</li>
-      <li>Gave multiple presentations on advanced topics such as Servish Mesh architectures, DevSecOps, etc</li>
-    </ul>
-  </div>
-<a href="./CV-pagolu.pdf" rel="noopener noreferrer" target="_blank" class="button"> Download Resume </a>
-<a href="./AWS-Certificate.pdf" rel="noopener noreferrer" target="_blank" class="button1"> Download AWS Certificate </a>
-<br><br>
-<!-- </div> -->
-</div>
+  <br>
+  <a href="./LakshmiSampathPagolu.pdf" rel="noopener noreferrer" target="_blank" class="button"> Download Resume
+  </a>
+
+  <br><br>
+  <!-- </div> -->
+
   <script type="text/javascript" src="./js/menubar.js"></script>
 </body>
+
 </html>

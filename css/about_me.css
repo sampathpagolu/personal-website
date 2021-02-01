@@ -1,0 +1,54 @@
+body {
+    font-family: BebasNeue;
+    background-color: #e4edec;
+    color: #3e3e3e;
+  }
+
+  h3 {
+    text-indent: 30px;
+    color: #536872;
+  }
+
+  h4 {
+    text-indent: 50px;
+  }
+
+  p {
+    text-indent: 70px;
+  }
+
+  ul {
+    list-style-type: none;
+    text-align: justify;
+    line-height: 1.8;
+    padding-left: 70px;
+    margin-right: 2em;
+  }
+
+  .totalborder {
+    margin-left: 250px;
+    margin-right:250px;
+    /* border: 1px solid #536872; */
+  }
+
+  #personal {
+    margin-left: 2em;
+    text-align: justify;
+    margin-right: 2em;
+  }
+
+  .button {
+    background-color: #536872;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+  }

@@ -7,9 +7,14 @@
 </head>
 <title> Contact </title>
 <style>
-body{
-      background-image: url("./images/pattern.png");
+body {
+  font-family: Lucida Bright, Georgia, serif;
+  background-image: url("./images/pattern.png");
+  background-size: 100%;
+  background-position: 0% 15%;
+  background-repeat: no-repeat;
 }
+
 #name{
   font-size: 35px;
   text-align: center;
@@ -33,13 +38,16 @@ body{
   #email-logo{
     width: 5%;
   }
+  #linkedin-logo{
+    width: 5%;
+  }
   label{display:block;}
 </style>
 <body>
     <div class="topnav">
       <a  onclick="Home('home')" href="./" id="home"> Home</a>
       <a onclick="about_me('about')" href="./about_me.html" id="about"> About Me</a>
-      <a onclick="projects('projects')" href="https://github.com/sampathpagolu" id="projects">Projects</a>
+      <a onclick="projects('projects')" href="https://github.com/sampathpagolu" target="_blank" rel="noopener noreferrer"id="projects">Projects</a>
       <a class="active" onclick="contact('contact')" href="./contact.html" id="contact">Contact</a>
     </div>
   <div id="body-2">
@@ -55,13 +63,13 @@ body{
   <a href="https://github.com/sampathpagolu/" rel="noopener noreferrer" target="_blank">
   <img id="logo" src="./images/github-logo.png">
 </div>
+<div id=linkedin>
+  <a href="https://www.linkedin.com/in/lakshmi-sampath-somanath-pagolu-14745b14a/" rel="noopener noreferrer" target="_blank">
+  <img id="linkedin-logo" src="./images/linkedin.png">
+</div>
 <div id=insta>
   <a href="https://www.instagram.com/sampathpagolu/" rel="noopener noreferrer" target="_blank">
   <img id="logo" src="./images/insta-logo.png">
-</div>
-<div id=fb>
-  <a href="http://www.facebook.com/somanathpagolu/" rel="noopener noreferrer" target="_blank">
-  <img id="logo" src="./images/fb-logo.png">
 </div>
 </div>
 
